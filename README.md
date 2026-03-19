@@ -14,6 +14,15 @@ tareas_api/
 ```
 
 ---
+## ⚙️Capturas de pantalla
+<img width="1919" height="1075" alt="Captura de pantalla 2026-03-19 130259" src="https://github.com/user-attachments/assets/9dce64bb-50f3-483b-a51c-a2e6c6a0cca6" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-03-19 130408" src="https://github.com/user-attachments/assets/e141a10f-bd9b-42b7-9a3d-f5a36a777cad" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-03-19 130542" src="https://github.com/user-attachments/assets/9e9f733c-3ed7-4afc-b965-ef24a4b43262" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-03-19 130640" src="https://github.com/user-attachments/assets/4c7286cd-b50c-48ec-b96f-6ebd8eb2ebbd" />
+
+---
+
+---
 
 ## ⚙️ Instalación y ejecución
 
