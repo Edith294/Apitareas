@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "API Tareas - Flask",
+    "_postman_id": "tareas-flask-collection",
+    "description": "Colección CRUD completa para la API REST de Tareas con Flask",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Tarea",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Estudiar Flask\",\n  \"descripcion\": \"Repasar blueprints y SQLAlchemy\",\n  \"estado\": \"pendiente\"\n}"
+        },
+        "url": { "raw": "http://127.0.0.1:5000/tareas", "host": ["127.0.0.1"], "port": "5000", "path": ["tareas"] }
+      }
+    },
+    {
+      "name": "Obtener Todas las Tareas",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://127.0.0.1:5000/tareas", "host": ["127.0.0.1"], "port": "5000", "path": ["tareas"] }
+      }
+    },
+    {
+      "name": "Filtrar Tareas por Estado",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:5000/tareas?estado=pendiente",
+          "host": ["127.0.0.1"], "port": "5000", "path": ["tareas"],
+          "query": [{ "key": "estado", "value": "pendiente" }]
+        }
+      }
+    },
+    {
+      "name": "Obtener Tarea por ID",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://127.0.0.1:5000/tareas/1", "host": ["127.0.0.1"], "port": "5000", "path": ["tareas", "1"] }
+      }
+    },
+    {
+      "name": "Actualizar Tarea",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"estado\": \"completada\"\n}"
+        },
+        "url": { "raw": "http://127.0.0.1:5000/tareas/1", "host": ["127.0.0.1"], "port": "5000", "path": ["tareas", "1"] }
+      }
+    },
+    {
+      "name": "Eliminar Tarea",
+      "request": {
+        "method": "DELETE",
+        "url": { "raw": "http://127.0.0.1:5000/tareas/1", "host": ["127.0.0.1"], "port": "5000", "path": ["tareas", "1"] }
+      }
+    }
+  ]
+}
